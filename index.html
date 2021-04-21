@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <title>Twice Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill this form</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="name" name="name" id="name" placeholder="Enter Your Name" required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input type="email" email="email" id="email" placeholder="Enter Your Email" required />
+      </label>
+
+      <label for="number" id="number-label">
+        Age
+        <input type="number" number="number" id="number" placeholder="How Old Are You?" min="15" max="40" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        How do you know Twice?
+        <select id="dropdown">
+          <option>Test 1</option>
+          <option>Test 1</option>
+        </select>
+      </label>
+
+      <label for="member" id="member-label">Whois Your favorite member?</label>
+
+      <input type="radio" name="member" value="1" checked />Nayeon <br />
+      <input type="radio" name="member" value="2" />Nayeon <br />
+      <input type="radio" name="member" value="3" />Nayeon <br />
+      <input type="radio" name="member" value="4" />Nayeon <br />
+      <input type="radio" name="member" value="5" />Nayeon <br />
+      <input type="radio" name="member" value="6" />Nayeon <br />
+      <input type="radio" name="member" value="7" />Nayeon <br />
+      <input type="radio" name="member" value="8" />Nayeon <br />
+
+      <br /><br />
+      <label for="albums" id="albums-label">Which one are you favorite album?</label>
+
+      <input type="checkbox" value="cry-for-me" />Cry For Me <br />
+      <input type="checkbox" value="eyes-wide-open" />Eyes Open <br />
+      <input type="checkbox" value="mode-and-more" />More And More <br />
+      <input type="checkbox" value="feel-special" />Feel Special <br />
+
+      <br /><br />
+
+      <label for="comments" id="comments-label">
+        Any comments or suggestions ?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
